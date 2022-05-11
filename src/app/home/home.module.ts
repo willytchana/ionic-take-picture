@@ -5,9 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-
+import { Camera } from '@awesome-cordova-plugins/camera/ngx';
 
 @NgModule({
+  providers:[
+    Camera
+   ],
   imports: [
     CommonModule,
     FormsModule,
